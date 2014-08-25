@@ -41,7 +41,7 @@ module.exports = (robot) ->
     try
       announcePullRequest data, (what) ->
         robot.messageRoom room, what
-        robot.messageRoom room, 'reviewer for deploygate 1327'
+        robot.messageRoom room, 'slackbot: reviewer for deploygate 1327'
     catch error
       robot.messageRoom room, "Whoa, I got an error: #{error}"
       console.log "github pull request notifier error: #{error}. Request: #{req.body}"
